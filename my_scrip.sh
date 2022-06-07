@@ -22,6 +22,7 @@ fi
 read ans
 if [ $ans == "01" ]
 then
+cd
 	 apt  update 
          apt upgrade
         pkg install curl 
@@ -30,6 +31,7 @@ then
 fi
 if [ $ans  == "02" ]
 then
+cd
 	pkg  install python
         pkh install git
  git clone https://github.com/sherlock-project/sherlock 
@@ -39,6 +41,7 @@ cd sherlock
 fi
 if [ $ans  == "03" ]
 then
+cd
     pkg install git 
 pkg install php 
 git clone https://github.com/Tuhinshubhra/RED_HAWK
@@ -47,18 +50,21 @@ git clone https://github.com/Tuhinshubhra/RED_HAWK
 fi
 if [ $ans == "04" ]
 then
-	pkg  install python
+	cd
+pkg  install python
   pkg install git 
 git clone https://github.com/Datalux/Osintgram 
 cd Osintgram
  pip install -r requirements.txt
 fi
 if [ $ans == "05" ]
-then
+then 
+cd
 	pkg  install git
  git clone https://github.com/anouarbensaad/vulnx
  cd vulnx 
 chmod +x insatll.sh 
+pip install requests
 ./install.sh 
 vulnx
 fi
@@ -71,18 +77,21 @@ fi
 read used
 if [ $used == "001" ]
 then
- 	apt  update && apt upgrade && pkg install git  php openssh curl -y
+ 	cd
+apt  update && apt upgrade && pkg install git  php openssh curl -y
  git clone https://github.com/htr-tech/zphisher 
 cd zphisher 
 chmod +x zphisher.sh
 fi
 if [ $used == "002" ]
 then
-	pkg  install git python php curl openssh grep && pip3 install wget && git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEye.git && cd HiddenEye && chmod 777 HiddenEye.py && python HiddenEye.py
+	cd 
+pkg  install git python php curl openssh grep && pip3 install wget && git clone -b Termux-Support-Branch https://github.com/DarkSecDevelopers/HiddenEye.git && cd HiddenEye && chmod 777 HiddenEye.py && python HiddenEye.py
 fi
 if [ $used == "003" ]
 then
-	git  clone https://github.com/techchipnet/CamPhish
+	cd 
+git  clone https://github.com/techchipnet/CamPhish
  cd CamPhish 
 chmod +x *
 bash camphish.sh
