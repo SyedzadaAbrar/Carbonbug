@@ -1,3 +1,4 @@
+#!/bin/bash
 echo "Carbon bug by syed abrar"
 echo "type g to enter"
 read input 
