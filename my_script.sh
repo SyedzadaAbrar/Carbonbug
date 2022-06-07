@@ -1,9 +1,7 @@
-echo -e "\e[35
-CARBON BUG BY SYED ABRAR
-\e[0m";
-echo -e "\e[35 type g to enter \e[0m";
+echo "Carbon big by syed abrar;
+echo "type g to enter";
 read input 
 if [ $input == "g" ]
 then 
-    cd scrip.sh
+    cd my_scrip.sh
     fi
