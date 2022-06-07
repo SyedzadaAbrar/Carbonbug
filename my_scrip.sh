@@ -64,8 +64,8 @@ cd
  git clone https://github.com/anouarbensaad/vulnx
  cd vulnx 
 chmod +x insatll.sh 
-pip install requests
-./install.sh 
+pip install -r requirements.txt
+bash install.sh
 vulnx
 fi
 if [ $input == "2" ]
