@@ -1,3 +1,4 @@
+#!/bin/bash
 echo -e "\e[31m
 CARBON BUG BY SYED ABRAR
 \e[0m";
